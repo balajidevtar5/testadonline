@@ -19,7 +19,7 @@ const sharePost = useCallback(async(elm,selectedOption) => {
 
    element.style.display = "none";
   if (navigator.canShare) {
-    const decodedUrl = decodeURIComponent(elm?.shareposturl);
+    const decodedUrl = decodeURIComponent("https://testadonline-tjpn.vercel.app/api/share/369");
 
     if(selectedOption === "withoutImage"){
   let textContent = `
