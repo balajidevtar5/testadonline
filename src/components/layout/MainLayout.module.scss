@@ -1,0 +1,41 @@
+@import "/src/styles/variable.scss";
+
+.LayoutContainer {
+
+    position: relative;
+
+    &__actionbar {
+        padding-top: $header-height;
+        max-height: $header-height;
+    }
+
+    &__sidebar {
+        width: $sidebar-width;
+        min-width: $sidebar-width;
+        overflow: hidden;
+        height: 100vh;
+        z-index: 7;
+        border-right: 1px solid $sidebar-border-color;
+        position: absolute;
+        background-color: #fff;
+        top: calc($header-height + 2px);
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    &__MainContainerAfterSidebar {
+        padding-left: 260px !important;
+
+        @media (max-width: 767px) {
+            padding-left: 0px !important;
+        }
+    }
+
+    &__PageContent {
+        // padding: $header-height 0 0 0;
+        // overflow-y: hidden;
+        // height: 100vh;
+        // position: relative;
+    }
+}

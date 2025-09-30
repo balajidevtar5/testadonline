@@ -1,0 +1,7 @@
+.navigation-gap {
+  gap: 8px 12px;
+
+  @media screen and (min-width: 360px) and (max-width: 409px) {
+    gap: 8px 10px;
+  }
+} 

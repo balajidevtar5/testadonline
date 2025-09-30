@@ -1,0 +1,81 @@
+.textArea {
+  padding: 10px !important;
+  width: 100% !important;
+  resize: none;
+  background: none;
+  font-size: 13px !important;
+  min-height: 100px;
+  max-height: 100px;
+}
+.textArea:focus-visible {
+  outline: none !important;
+}
+.textArea::-moz-placeholder {
+  color: #8c7b7b;
+}
+.textArea::placeholder {
+  color: #8c7b7b;
+}
+
+.addLabelBtn {
+  border: 1px dashed #ff780c;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #ff780c;
+  padding: 5px 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+  width: 100%;
+}
+
+.uploadBtn {
+  border: 1px dashed #ff780c;
+  background-color: #fff;
+  color: #ff780c;
+  padding: 5px 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 13px;
+  margin-left: 5px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.uploadBtn svg {
+  font-size: 15px;
+}
+
+.colorPlate {
+  margin: 10px 5px 0 10px !important;
+}
+
+.postAdd {
+  padding: 10px 10px 10px 10px !important;
+}
+
+.prizeDistribution {
+  padding: 0px 11px 10px 0 !important;
+  position: relative;
+}
+@media (max-width: 599px) {
+  .prizeDistribution {
+    padding: 0px 11px 10px 11px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .postAdd {
+    max-width: 100% !important;
+    flex-basis: 100% !important;
+    -webkit-flex-basis: 100% !important;
+  }
+  .prizeDistribution {
+    max-width: 100% !important;
+    flex-basis: 100% !important;
+    -webkit-flex-basis: 100% !important;
+  }
+}
+.antStepperTitle :global(.ant-steps-item-title) {
+  padding-inline-end: 0px !important;
+}/*# sourceMappingURL=PostDetailStyles.module.css.map */

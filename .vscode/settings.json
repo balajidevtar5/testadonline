@@ -1,0 +1,9 @@
+{
+  "editor.autoClosingQuotes": "languageDefined",
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.formatOnSave": false,
+	"typescript.suppressImplicitAnyIndexErrors": true,
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off"
+  }
+}

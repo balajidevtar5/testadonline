@@ -1,0 +1,235 @@
+/* .related-ads-wrapper {
+  padding: 1rem 1rem 0 1rem;
+} */
+
+.related-ads-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  padding: 0px 5px;
+}
+
+.related-ads-scroll-container {
+  display: flex;
+  /* overflow-x: auto; */
+  gap: 0.75rem;
+  padding: 0 0 1rem 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+} 
+
+/* .related-ads-scroll-container::-webkit-scrollbar {
+  display: none;
+} */
+
+ .related-ad-card {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 0 15px #ddd;
+  margin: 0 8px;
+  width: calc(100% - 13px) !important;  
+}
+
+.dark .related-ad-card {
+  border: 1px solid #373737 !important;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+}
+.dark  .related-ad-card {
+  background-color: #1F1F1F;
+}
+.slick-slider{
+  width: 100%;
+}
+.related-ad-card .related-ad-img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.related-ad-card .related-ad-info {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.related-ad-price {
+  font-weight: bold;
+  color: #1b5e20;
+  font-size: 0.9rem;
+}
+
+.related-ad-card .related-ad-title {
+  font-size: 16px;
+  color: #333;
+  white-space: nowrap;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* border-bottom: 1px dashed rgb(222, 213, 213); */
+}
+.dark .related-ad-title{
+  color: #C7C7C7;
+}
+.related-ad-location {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dark .related-ad-location{
+  color: #C7C7C7;
+}
+
+.related-ad-meta {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.dark .related-ad-meta{
+  color: #C7C7C7;
+}
+
+.related-ad-meta span {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Tablet */
+/* @media (min-width: 768px) {
+  .related-ad-card {
+    width: 25vw;
+  }
+} */
+
+/* Desktop */
+/* @media (min-width: 1024px) {
+  .related-ad-card {
+    width: 18vw;
+  }
+} */
+
+/* Skeleton Styles */
+.skeleton {
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: 6px;
+}
+
+.dark .skeleton {
+  background: linear-gradient(
+    90deg,
+    #3a3a3a 25%,  /* dark grey base */
+    #4f4f4f 50%,  /* lighter middle highlight */
+    #3a3a3a 75%   /* return to base */
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Match layout with related-ad-card */
+.skeleton-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 8px;
+  width: calc(100% - 13px) !important;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.dark .skeleton-card{
+  background: #1F1F1F !important;
+  border: 1px solid #1F1F1F;
+}
+/* Skeleton image placeholder */
+.skeleton-img {
+  height: 130px;
+  width: 100%;
+}
+
+/* Info block placeholders */
+.skeleton-title {
+  height: 14px;
+  width: 70%;
+  margin-top: 10px;
+}
+
+.skeleton-location {
+  height: 12px;
+  width: 50%;
+  margin-top: 8px;
+}
+
+.skeleton-meta {
+  height: 12px;
+  width: 90%;
+  margin-top: 8px;
+}
+
+.slick-track{
+  margin-left: 0px !important;
+}
+
+@media (max-width: 640px) {
+.related-ads-scroll-container {
+    flex-direction: column;
+  }
+}
+
+.related-ad-card .related-ad-description {
+display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5em;
+  height: 100px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  -webkit-line-clamp: 7;
+}
+.dark .related-ad-card .related-ad-description{
+ color:#C7C7C7  ;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .related-ad-card .related-ad-description {
+    -webkit-line-clamp: 6;
+      /* fits 10vh approx */
+      height: auto;
+      padding-bottom: 0px;
+      margin-bottom: 5px;
+  }
+}
+.related-ad-card .posticons{
+ height: 40px;
+} 
+
+.related-ad-card .related-adimage img{
+  height: 200px;
+}
+

@@ -1,0 +1,85 @@
+.viewsInput {
+  min-height: 15px !important;
+}
+
+.prizeDistribution {
+  margin: 0px 10px 10px 10px !important;
+  position: relative;
+}
+
+.tag :global(.ant-tag) {
+  border: none;
+  padding: 0px 12px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.eyeSvg {
+  display: flex;
+  align-items: center;
+}
+.eyeSvg svg path {
+  fill: #ff780c;
+}
+
+.preview-image {
+  margin: auto;
+  justify-content: center;
+  width: 200px;
+  align-items: center;
+  display: flex;
+  height: auto;
+  max-height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.preview-bg {
+  background-color: rgb(255, 231, 211);
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .viewCount {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sm-mt-10 {
+    margin-top: 10px;
+  }
+}
+
+.premiumAdModal :global(.ant-upload-wrapper) {
+  height: 220px !important;
+}
+
+.deleteImage {
+  position: absolute;
+  border: none !important;
+  background: #ff780c !important;
+  height: 35px;
+  width: 35px;
+  z-index: 9999;
+  border-radius: 0px 0px 0px 20px;
+  cursor: pointer;
+  right: 0;
+}
+.deleteImage svg {
+  color: #ffffff;
+  position: relative;
+  top: 3px;
+  left: 7px;
+}
+
+.editPremiumAddClass {
+  flex-direction: column !important;
+  display: flex !important;
+}
+
+.editDialog .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  max-width: 400px !important;
+}/*# sourceMappingURL=premiumStyles.css.map */

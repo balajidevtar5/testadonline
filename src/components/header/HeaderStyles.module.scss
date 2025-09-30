@@ -1,0 +1,77 @@
+@import "../../styles/variable.scss";
+
+.headerContainer {
+    // background-color: #fff;
+    display: flex;
+    align-items: center;
+    //padding:  10px 1px;
+    // position: fixed;
+    // top: 0;
+    width: calc(100% - 1px);
+    // z-index: 99;
+    // border-bottom: 1px solid #F3F3F3;
+
+    @media (max-width:768px) {
+        padding-bottom: 2px;
+    }
+}
+
+.dark .headerContainer{
+    background-color: #1F1F1F !important;
+    box-shadow: 0 0 10px #272626 !important;
+
+  }
+
+.header-width {
+    width: calc(100% - 20px);
+}
+
+.searchInputBox {
+    border: 1px solid #d9d9d9;
+}
+
+@media (max-width: 767px) {
+    .minWidth40px {
+        min-width: 30px;
+    }
+}
+
+.notificationwrapper {
+  position: relative;
+  margin-right: 10px; 
+  cursor: pointer;
+}
+
+.notificationbadge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  font-size: 9px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .searchrmv {
+    display: none !important;
+  }
+}
+
+@media (max-width: 400PX) {
+   .p10{
+    padding: 0px 16px;
+   }
+  .hideOnSmall {
+    display: none !important;
+  }
+}
+
+.logosection {
+  padding: 0px 3px !important
+}

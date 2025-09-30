@@ -1,0 +1,38 @@
+.container {
+  justify-content: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 25px;
+}
+
+.errorText {
+  color: red;
+  font-size: 15px;
+  padding: 20px;
+  margin: 30px;
+  text-align: center;
+}
+
+.homeBtn {
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+  background-color: #ff780c;
+}
+
+.textWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.noDataImg {
+  width: 70%;
+}/*# sourceMappingURL=error.module.css.map */

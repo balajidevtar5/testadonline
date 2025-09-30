@@ -1,0 +1,14 @@
+.searchFilter {
+    :global(.ant-btn-icon) {
+        margin-inline-end: 4px !important;
+
+        svg {
+            color: white;
+        }
+    }
+}
+
+.tableWithFixedPagination .ant-table-pagination {
+    width: 300px; 
+    margin: 0 auto; 
+  }

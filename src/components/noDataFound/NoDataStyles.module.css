@@ -1,0 +1,8 @@
+.nodata {
+  max-height: calc(100vh - 260px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  margin-top: 150px;
+}/*# sourceMappingURL=NoDataStyles.module.css.map */

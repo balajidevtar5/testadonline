@@ -1,0 +1,6 @@
+.searchFilter :global(.ant-btn-icon) {
+  margin-inline-end: 4px !important;
+}
+.searchFilter :global(.ant-btn-icon) svg {
+  color: white;
+}/*# sourceMappingURL=UserDetailsStyles.module.css.map */

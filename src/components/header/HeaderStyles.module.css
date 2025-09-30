@@ -1,0 +1,47 @@
+.headerContainer {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 10px 10px;
+  width: calc(100% - 20px);
+  box-shadow: 0 0 10px #dfdfdf;
+}
+@media (max-width: 768px) {
+  .headerContainer {
+    padding-bottom: 2px;
+  }
+}
+
+.header-width {
+  width: calc(100% - 20px);
+}
+
+.searchInputBox {
+  border: 1px solid #d9d9d9;
+}
+
+@media (max-width: 767px) {
+  .minWidth40px {
+    min-width: 30px;
+  }
+}/*# sourceMappingURL=HeaderStyles.module.css.map */
+.notificationwrapper {
+  position: relative;
+  /*margin-right: 5px !important; */
+  cursor: pointer;
+}
+
+.notificationbadge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
