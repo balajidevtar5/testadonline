@@ -64,7 +64,7 @@ const App = () => {
       isPrivate: false,
     },
     {
-     path: "/api/share/:postDetailsId",
+     path: "/share/:postDetailsId",
      element: <HomeContainer />,
       title: "Home",
       isPrivate: false,
