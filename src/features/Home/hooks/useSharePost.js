@@ -19,7 +19,7 @@ const sharePost = useCallback(async(elm,selectedOption) => {
 
    element.style.display = "none";
   if (navigator.canShare) {
-    const decodedUrl = decodeURIComponent("https://testadonline-1pem.vercel.app/api/share/369");
+    const decodedUrl = "https://testadonline-1pem.vercel.app/api/share/369";
 
     if(selectedOption === "withoutImage"){
   let textContent = `
@@ -32,7 +32,7 @@ ${elm?.shortdescription} \n`;
     }
 
     textContent += `${t("location_label")} : ${elm?.location} \n
-${t("contact_details")}\n ${decodedUrl} \n
+${t("contact_details")}\n${decodedUrl} \n
 ${t("download_app")}\n ${NEW_APPURL}\n
 ${t("join_whatsapp")}\n ${WHATSAPP_CHANNEL} \n`;
 
@@ -40,6 +40,7 @@ ${t("join_whatsapp")}\n ${WHATSAPP_CHANNEL} \n`;
       .share({
         title: elm?.title,
         text: textContent,
+        url:decodedUrl
       })
       .then(() => {
         if (LOGEVENTCALL) {
