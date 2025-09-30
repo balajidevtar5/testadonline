@@ -7,7 +7,7 @@ module.exports = {
   mode: "production",
   entry: "./src/index.tsx",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
     publicPath: "/BETA/web",
   },
@@ -81,7 +81,7 @@ module.exports = {
         },
         {
           from: path.resolve(__dirname, "public"),
-          to: path.resolve(__dirname, "dist"),
+          to: path.resolve(__dirname, "build"),
           globOptions: {
             ignore: [
               "**/index.html",
