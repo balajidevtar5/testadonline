@@ -38,7 +38,7 @@ async function getTranslationPath() {
   let manifest;
   try{
   // Fetch the manifest if on production (assuming BETA URL for production)
-    const response = await fetch('/BETA/web/asset-manifest.json');
+    const response = await fetch('/asset-manifest.json');
     if (!response.ok) {
       throw new Error(`Failed to fetch manifest: ${response.status}`);
     }

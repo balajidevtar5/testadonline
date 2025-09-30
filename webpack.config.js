@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
-    publicPath: "/BETA/web",
+    publicPath: "/",
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
@@ -95,7 +95,7 @@ module.exports = {
     }),
     new WebpackManifestPlugin({
       fileName: "asset-manifest.json",
-      publicPath: "/BETA/web",
+      publicPath: "/",
       writeToFileEmit: true,
     }),
   ],

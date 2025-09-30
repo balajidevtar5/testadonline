@@ -248,7 +248,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={Theme}>
-      <BrowserRouter basename="/BETA/web">
+      <BrowserRouter >
         <LayoutContextProvider>
           <Routes>
             {APP_ROUTES.map((route, index) => (
