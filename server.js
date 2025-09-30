@@ -5,8 +5,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Serve React build
-app.use(express.static(path.resolve("dist")));
-const distPath = path.resolve("dist");
+app.use(express.static(path.resolve("build")));
+const distPath = path.resolve("build");
 // Dynamic share page
 app.get("/share/:postId", (req, res) => {
   const { postId } = req.params;
@@ -41,7 +41,7 @@ app.get("/share/:postId", (req, res) => {
 
 // Fallback to React for other routes
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve("dist", "index.html"));
+  res.sendFile(path.resolve("build", "index.html"));
 });
 
 app.listen(PORT, () => {
