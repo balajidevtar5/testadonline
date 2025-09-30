@@ -39,8 +39,7 @@ ${t("join_whatsapp")}\n ${WHATSAPP_CHANNEL} \n`;
     navigator
       .share({
         title: elm?.title,
-        text: textContent,
-        url:decodedUrl
+        text: `${elm?.title}\n${elm?.shortdescription}\n\nhttps://testadonline-1pem.vercel.app/share/${elm?.id}`
       })
       .then(() => {
         if (LOGEVENTCALL) {
