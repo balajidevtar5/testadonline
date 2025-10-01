@@ -826,10 +826,11 @@ useEffect(() => {
 
   
     useEffect(() => {
-      if (location.pathname.startsWith("/api/")) {
-        window.location.href = "https://adonline.in/";  
-      }
-    }, [location, navigate]);
+  if (location.pathname.startsWith("/api/share/")) {
+    const id = location.pathname.split("/").pop(); // extract last part of URL
+    window.location.href = `http://localhost:3000/share/${id}`;
+  }
+}, [location]);
 
   useEffect(() => {
     if ("serviceWorker" in navigator) {
