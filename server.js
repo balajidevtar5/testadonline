@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.resolve("build")));
 const distPath = path.resolve("build");
 // Dynamic share page
-app.get("/share/:postId", (req, res) => {
+app.get("/api/server/share/:postId", (req, res) => {
   const { postId } = req.params;
   console.log("Express hit with postId:", postId);
 
