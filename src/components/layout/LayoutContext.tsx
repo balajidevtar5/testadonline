@@ -827,7 +827,7 @@ useEffect(() => {
   
     useEffect(() => {
       if (location.pathname.startsWith("/api/")) {
-        navigate("https://adonline.in/"); 
+        window.location.href = "https://adonline.in/";  
       }
     }, [location, navigate]);
 
