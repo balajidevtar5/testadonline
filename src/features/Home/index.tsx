@@ -890,13 +890,6 @@ const HomePage = () => {
 
   }, [])
 
-  useEffect(() => {
-    if (location.pathname.startsWith("/api/")) {
-      // remove "/api" from the start of the path
-      const cleanPath = location.pathname.replace(/^\/api/, "");
-      navigate(cleanPath, { replace: true }); // redirect without reloading
-    }
-  }, [location, navigate]);
 
 
   useEffect(() => {
