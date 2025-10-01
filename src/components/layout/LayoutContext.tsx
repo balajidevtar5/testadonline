@@ -827,9 +827,7 @@ useEffect(() => {
   
     useEffect(() => {
       if (location.pathname.startsWith("/api/")) {
-        // remove "/api" from the start of the path
-        const cleanPath = location.pathname.replace(/^\/api/, "");
-        navigate("https://adonline.in/", { replace: true }); // redirect without reloading
+        navigate("https://adonline.in/"); 
       }
     }, [location, navigate]);
 
