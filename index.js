@@ -1,0 +1,1 @@
+"serviceWorker"in navigator&&navigator.serviceWorker.register("/firebase-messaging-sw.js").then((e=>{e.update()})).catch((e=>{console.error("Service Worker registration failed:",e)}));

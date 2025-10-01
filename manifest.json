@@ -1,0 +1,73 @@
+{
+  "short_name": "AdOnline.in", 
+  "name": "AdOnline.in",
+  "description": "AdOnline.in: Connecting People, Businesses, and Opportunities. Discover a seamless classified experience at AdOnline.in. Buy, sell, or explore real estate, jobs, services, and events. Join our community and shape the future of classifieds.",
+  "icons": [
+    {
+      "src": "16x16.jpg",
+      "sizes": "16x16",
+      "type": "image/jpg",
+      "purpose": "any"
+    },
+    {
+      "src": "24x24.jpg",
+      "sizes": "24x24",
+      "type": "image/jpg",
+      "purpose": "any"
+    },
+    {
+      "src": "32x32.jpg",
+      "sizes": "32x32",
+      "type": "image/jpg",
+      "purpose": "any"
+    },
+    {
+      "src": "64x64.jpg",
+      "sizes": "64x64",
+      "type": "image/jpg",
+      "purpose": "any"
+    },
+    {
+      "src": "144x144.jpg",
+      "sizes": "144x144",
+      "type": "image/jpg",
+      "purpose": "any"
+    },
+    {
+      "src": "512X512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "screenshots": [
+    {
+     "src": "mobiles1.jpg",
+      "sizes": "540x1115",
+      "type": "image/jpg",
+      "form_factor": "narrow",
+      "label": "Near by ads",
+      "purpose": "any"
+    },
+    {
+     "src": "mobiles2.jpg",
+      "sizes": "540x1115",
+      "type": "image/jpg",
+      "form_factor": "narrow",
+      "label": "Add new post",
+      "purpose": "any"
+    },
+    {
+     "src": "wide1.png",
+      "sizes": "1272x943",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Near by ads",
+      "purpose": "any"
+    }
+  ]
+}
